@@ -1,0 +1,149 @@
+
+.blog .entry-title {
+    text-align:center;
+    padding-top:50px;
+  
+}
+
+.blog .entry-title a{
+    color:$dark_blue;
+    font-size: 1.5em;
+    text-decoration:none;
+}
+
+.blog .entry-date{
+    color:$dark_blue;
+    
+    
+}
+
+.blog .page-title{
+    margin-top: 6rem;
+    text-align:center;
+    padding: 1.5rem 0;
+}
+
+.blog .entry-content p {
+    padding-right: 20px;
+    padding-left:20px;
+}
+
+.blog .url{
+    color:$dark_blue;
+    text-decoration:none;
+}
+
+.blog .entry-header{
+        margin-bottom:50px;
+    }
+
+.blog .read-more{
+    
+    color:$dark_blue;
+    margin-top: 300px;
+}
+
+.entry-footer{
+    display:none;
+}
+
+.blog .post-thumbnail {
+width: 100%;
+    height:300px ; 
+
+
+.wp-post-image{
+     
+    object-position: cover;
+   
+}
+}
+
+.blog article{
+    background-color:#f8f8f8;
+    padding-bottom:10px;
+}
+
+.blog-title{
+    text-align:center;
+    padding-top:6rem;
+    color: #404040;
+    margin-bottom: 10px;
+}
+
+.blog article{
+    max-width:80rem;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 700px){
+
+    .blog .entry-content p {
+        padding-right: 5px;
+        padding-left:10px;
+    }
+   
+    
+
+    .blog article{
+        
+            display: grid; 
+            grid-template-columns: 0.1fr 1.8fr 2fr 0.1fr; 
+            grid-template-rows: 0.2fr 0.2fr 0.2fr; 
+            gap: 0px 0px; 
+            margin-top:20px;
+            padding-bottom:40px;
+            grid-template-areas: 
+              ". entry-header entry-header"
+              ". post-thumbnail entry-content";
+              
+          
+          .entry-header { grid-area: entry-header; }
+          .post-thumbnail { grid-area: post-thumbnail; }
+          .entry-content { grid-area: entry-content; }
+      
+         }
+      .blog .post-thumbnail {
+        padding-right:20px; 
+        max-width:  514px; 
+        max-height: 290px;    
+         
+      }
+
+      .blog .wp-post-image{
+        object-fit:cover;
+      }
+      
+}
+
+@media(min-width: 800px){
+    .blog .entry-content p {
+        width:75%;
+    }
+
+    .blog article .entry-content{
+        display:flex;
+        justify-content:center;
+    
+    }
+    
+}
+
+@media(min-width: 1000px){
+    .blog .entry-content p {
+        width:75%;
+    }
+
+    .blog article .entry-content{
+        display:flex;
+        justify-content:center;
+        position:relative;
+        top:25%;
+    
+    }
+    
+}
+
+
+    

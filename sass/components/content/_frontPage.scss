@@ -1,0 +1,248 @@
+.page{
+    background-color:#e5e5e5;
+}
+
+.home {
+
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .landing {
+        position: relative;
+
+        img {
+            object-fit: cover;
+            max-height: 45rem;
+            width: 100%;
+            border-bottom: $border;
+          }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: min(8vw, 4.5rem);
+            margin: 0;
+        }
+    }
+
+    .home-intro {
+        text-align: center;
+        padding: 0 1rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+        
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+
+        .button {
+          width: min(5rem, 10rem);
+          display: block;
+          margin: 0.25rem;
+
+          a {
+              border: double 1px white;
+              margin: 0 auto;
+              padding: .25rem;
+              text-align: center;
+              text-decoration: none;
+              color: $plain_white;
+              background-color: $dark_blue;
+              box-shadow: 0px 0px 3px 0px #23232374;
+
+            }
+
+            a:hover{
+                background-color:black;
+                color:white;
+                
+            }
+        }
+    }
+
+    
+
+    .post-thumbnail {
+
+        img {
+            object-fit: cover;
+            max-height: 45rem;
+          }
+    }
+
+    .featured-services {
+
+        margin: 3rem auto;
+
+        .all-services {
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+            
+        article {
+            border: 2px rgb(224, 222, 222) solid;
+            width: min(90%, 20rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 1rem;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h3,
+                p {
+                    padding: 0 1rem;
+                   
+                }
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    min-height: 15rem;
+                    max-height: 21rem;
+                    border-bottom: 3px $dark_blue solid;
+                    border-top: 3px $dark_blue solid;
+                } 
+            }
+               
+            a.cta-button {
+                border: white 3px double;
+                background-color:#14213d;
+                color:white;
+                padding: .5rem;
+                text-decoration: none;
+                background-color: none;
+                margin: 1rem auto;
+                width: 10rem;
+                text-align: center;
+                box-shadow: 0px 0px 3px 0px #23232374;
+            }  
+            
+            a.cta-button:hover{
+                background-color:black;
+                color:white;
+            }
+        
+        }
+    }
+
+    @media screen and (min-width: 1800px ){
+        .featured-services {
+    
+            .all-services {
+                max-width: 100rem;
+            }
+        }
+    }
+
+
+    .team-members {
+        background-color:white;
+        color:#14213d;
+        padding-top: 5rem;
+
+        .all-staff-members {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 80rem;
+            margin: 0 auto;
+        } 
+
+        a{
+            color:#14213d;
+            text-decoration:none;
+        }
+
+        a:hover{
+            color:black;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            width: min(100%, 25rem);
+            margin: 2rem auto;
+
+            img {
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+                margin: 0 auto;
+                order: -1;
+                position:relative;
+                border-radius:90px;
+                border:3px solid #14213d;
+               
+            }
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            a {
+                border: white 3px double;
+                padding: .5rem;
+                text-decoration: none;
+                background-color: #14213d;
+                color:white;
+                margin: 1rem auto;
+                width: 15rem;
+                text-align: center;
+                box-shadow: 0px 0px 3px 0px #23232374;
+            }   
+
+            a:hover{
+                background-color:black;
+                color:white;
+            }
+        }
+    }
+
+    .instagram-grid {
+        margin-top: 3rem;
+    }
+
+    .testimonials {
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: $mobileWide) {
+        .home {
+            .landing {
+                img {
+                    border-bottom: none;
+                }
+            }
+
+            .info {
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                width: 100vw;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+

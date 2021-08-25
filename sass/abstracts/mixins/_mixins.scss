@@ -1,0 +1,25 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+// Hero Image Styling 
+// Make sure you make whatever the is wrapping the image as 100% width as well
+
+
+
+@mixin servicesButton {
+
+}
+
+@mixin contactUs {
+
+}

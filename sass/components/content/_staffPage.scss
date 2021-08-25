@@ -1,0 +1,84 @@
+.post-type-archive-fit-staff {
+
+    .page-header {
+        padding-top: 6rem;
+        text-align: center;
+    }
+
+    .width{
+       display:flex;
+       justify-content:center;
+    }
+
+    @media(min-width:800px){
+    .width p{
+        width:80%;
+    }
+    }
+
+    .all-staff {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 2rem auto;
+        min-height: 50rem;
+
+        img {
+            border-radius: 90px;
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            margin: 0 auto;
+            order: -1;
+            border: 2px rgb(224, 222, 222) solid;
+        } 
+        
+        h2, h3 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .classes-taught {
+            padding: 0.5rem;
+            border-bottom: 2px rgb(224, 222, 222) solid;
+            text-align: center;
+            flex-grow: 1;
+
+            ul {
+               margin: 0; 
+               padding: 0;
+            
+                li {
+                    list-style: none;
+                    padding: 0;
+                    margin: 1rem;
+                
+                    a {
+                        font-weight: bold;
+                       
+                        text-decoration:none;
+                        color:black;
+                    }
+
+                    a:hover{
+                         color: #fca311;
+                    }
+                }
+            }
+        }
+    }
+}

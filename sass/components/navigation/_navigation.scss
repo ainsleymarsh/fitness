@@ -1,0 +1,173 @@
+.main-navigation {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 10000;
+  width: 100%;
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  .bar {
+    width: 20px;
+    height: 1px;
+    background: white;
+    margin: 0 auto 6px;
+  }
+
+  .bar:nth-of-type(2) {
+    width: 25px;
+  }
+
+  button.menu-toggle {
+    background: black;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 10;
+  }
+
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 100%;
+    right: -50%;
+    z-index: -1;
+  }
+
+  li {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+
+    &:hover {
+      color:black;
+
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  button {
+    float: right;
+  }
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+  background: transparent;
+  border: none;
+}
+
+.main-navigation ul.sub-menu {
+  display: none;
+}
+
+/* Highlight using link element */
+li.current-menu-item > a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 37.5em) {
+	.main-navigation {
+		bottom: initial;
+		right: initial;
+    position:relative;
+
+		li {
+			background: initial;
+		}
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+    padding-top: 1.25rem;
+    z-index: 1;
+
+    li {
+      
+      a {
+        color: white;
+        fill: white;
+
+        &:hover {
+          color: #fca311;
+    
+          path {
+            fill: white;
+          }
+        }
+      }
+
+    }
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  .site-main & {
+    margin: 0 0 1.5em;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-previous {
+    flex: 1 0 50%;
+  }
+
+  .nav-next {
+    flex: 1 0 50%;
+  }
+
+ 
+}
+
+.main-navigation{
+  font-size:1rem;
+}
+
+@media (min-width:1000px){
+    .main-navigation{
+    font-size: 1.25rem;
+  }
+}
